@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBIT Condonation Fee System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .background {
+            background-image: url('cbiit.png'); /* Ensure full image visibility */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay for better contrast */
+        }
+        header {
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 10px;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .img {
+            max-width: 200px;
+            height: auto;
+        }
+        .navbar {
+            background-color: #007bff !important;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        .navbar-toggler {
+            border: 1px solid white;
+        }
+        .login-box {
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            backdrop-filter: blur(10px); /* Glassmorphism effect */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .login-box h2 {
+            color: #007bff;
+        }
+
+        .login-box p {
+            text-align: justify;
+            color: #000;
+        }
+        @media (max-width: 768px) {
+            .login-box {
+                width: 90%;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .login-box {
+                padding: 10px;
+            }
+
+            .navbar-nav {
+                text-align: center;
+            }
+
+            .navbar-collapse {
+                background: rgba(0, 123, 255, 0.8);
+                padding: 10px;
+            }
+        }
+        .footer{
+                background-color: beige;
+            }
+        .immg{
+            margin-left: 200px;
+            height: 100px;
+            width: 300px;
+        }
+        .clg{
+            margin-left: 230px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="img" src="cbbiit.png" alt="CBIT Logo">
+    </header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CBIT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="mai.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.cbit.ac.in/about_post/about/">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Info</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="background">
+        <div class="overlay"></div> 
+        <div class="login-box">
+            <h2>Attendance Guidelines</h2>
+            <p>
+                The Social Welfare Department, Govt of [State], has issued revised guidelines to colleges for the renewal of scholarships for the year [Upcoming Academic Year]. Accordingly, every scholarship holder shall maintain a minimum of **75% attendance** in the previous year [Current Academic Year].
+            </p>
+            <p>
+                The Heads of Departments are requested to certify the attendance of scholarship holders of their respective departments in the prescribed format for the year [Current Academic Year]. The concerned student must enclose the certificate issued by the Head of the Department along with a hard copy of the Scholarship Online Renewal Application Form and submit it in the scholarship section for further processing.
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="cbbiit.png" alt="" class="immg">
+        <br>
+        <div class="clg">
+            <br>
+            College Contact Info <br>
+        Gandipet, Hyderabad, Telangana, <br>
+        PIN : 500075 <br>
+        Phone: 040-24193276 <br>
+        Mobile: 8466997201 <br>
+        For Admissions Enquiry: 8466997216 <br>
+        Email: principal@cbit.ac.in
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

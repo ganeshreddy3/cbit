@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Condonation Fee Payment</title>
+    <style>
+        /* Default styles for all devices */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .ima {
+            width: 100%;
+            max-width: 500px; /* Ensure the image doesn't exceed its container */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .details {
+            margin: 20px auto; /* Center the container */
+            padding: 20px;
+            border-radius: 30px;
+            background-color: #3BF4FB;
+            max-width: 500px; /* Limit width for larger screens */
+            width: 90%; /* Fluid width for smaller screens */
+        }
+
+        .donation {
+            background-color: aqua;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .donation hr {
+            margin: 10px auto;
+            width: 50%;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        /* Media Queries for Responsive Design */
+
+        /* For tablets and smaller desktops */
+        @media (max-width: 768px) {
+            .details {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        /* For mobile devices */
+        @media (max-width: 480px) {
+            .ima {
+                max-width: 100%; /* Ensure the logo fits on small screens */
+            }
+
+            .details {
+                padding: 15px;
+                border-radius: 20px;
+            }
+
+            .input-group-text {
+                font-size: 14px; /* Smaller text for small screens */
+            }
+
+            .btn-primary {
+                font-size: 14px;
+            }
+        }
+        .footer{
+                background-color: beige;
+            }
+        .immg{
+            margin-left: 200px;
+            height: 100px;
+            width: 300px;
+        }
+        .clg{
+            margin-left: 230px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img src="mainlogo.png" alt="CBIT Logo" class="ima">
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">CBIT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.cbit.ac.in/about_post/about/">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="donation">
+        <hr>
+        <h2>Condonation Fee Payment</h2>
+        <hr>
+    </div>
+
+    <div class="details">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Roll NO:</span>
+            <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Password:</span>
+            <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <a href="condonation.html"><button class="btn btn-primary" type="submit">Get Details</button></a>
+    </div>
+    <div class="footer">
+        <img src="cbbiit.png" alt="" class="immg">
+        <br>
+        <div class="clg">
+            <br>
+            College Contact Info <br>
+        Gandipet, Hyderabad, Telangana, <br>
+        PIN : 500075 <br>
+        Phone: 040-24193276 <br>
+        Mobile: 8466997201 <br>
+        For Admissions Enquiry: 8466997216 <br>
+        Email: principal@cbit.ac.in
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

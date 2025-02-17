@@ -1,0 +1,303 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar {
+            background-color: #007bff !important;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        .navbar-toggler {
+            border: 1px solid white;
+        }
+        .payment-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 450px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .payment-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-top: 20px;
+        }
+        .btn-exit {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .btn-exit:hover {
+            background-color: #c82333;
+        }
+        @media (max-width: 480px) {
+            .payment-container {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+        .footer{
+                background-color: beige;
+            }
+        .immg{
+            margin-left: 200px;
+            height: 100px;
+            width: 300px;
+        }
+        .clg{
+            margin-left: 230px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CBIT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="mai.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.cbit.ac.in/about_post/about/">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Info</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="payment-container">
+        <img src="pay.png" alt="QR Code">
+        <h2>Scan the QR and Pay</h2>
+        <a href="mai.html"><button class="btn-exit">Exit</button></a>
+    </div>
+    <div class="footer">
+        <img src="cbbiit.png" alt="" class="immg">
+        <br>
+        <div class="clg">
+            <br>
+            College Contact Info <br>
+        Gandipet, Hyderabad, Telangana, <br>
+        PIN : 500075 <br>
+        Phone: 040-24193276 <br>
+        Mobile: 8466997201 <br>
+        For Admissions Enquiry: 8466997216 <br>
+        Email: principal@cbit.ac.in
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand, .nav-link {
+            color: white;
+        }
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 40px;
+        }
+        .container-box, .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 35%;
+            text-align: center;
+        }
+        .container-box img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .btn-exit {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+            display: block;
+            margin: 20px auto 0;
+        }
+        .btn-exit:hover {
+            background-color: #c82333;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #007bff;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .container-box, .form-container {
+                width: 90%;
+            }
+            #under{
+                text-decoration: none;
+            }
+        }
+        .footer{
+                background-color: beige;
+            }
+        .immg{
+            margin-left: 200px;
+            height: 100px;
+            width: 300px;
+        }
+        .clg{
+            margin-left: 230px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CBIT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.cbit.ac.in/about_post/about/">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="info.html">Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div class="container-box">
+            <img src="pay.png" alt="QR Code">
+            <h2>Pay and Add History</h2>
+            <a href="mai.html" id="under"><button class="btn-exit">Exit</button></a>
+        </div>
+        <div class="form-container">
+            <h2>Payment History</h2>
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="UTR ID">
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" placeholder="Amount">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Payment</button>
+            </form>
+
+            <h3 class="mt-4">Payment History</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>UTR ID</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12345</td>
+                        <td>5000</td>
+                        <td>2025-02-17</td>
+                    </tr>
+                    <tr>
+                        <td>67890</td>
+                        <td>300</td>
+                        <td>2025-02-16</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <img src="cbbiit.png" alt="" class="immg">
+        <br>
+        <div class="clg">
+            <br>
+            College Contact Info <br>
+        Gandipet, Hyderabad, Telangana, <br>
+        PIN : 500075 <br>
+        Phone: 040-24193276 <br>
+        Mobile: 8466997201 <br>
+        For Admissions Enquiry: 8466997216 <br>
+        Email: principal@cbit.ac.in
+        </div>
+    </div>
+</body>
+
+</html>
